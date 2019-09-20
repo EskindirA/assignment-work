@@ -18,5 +18,7 @@ Installation Steps
 
 1. install composer 
 2. run composer install
-3. run php artisan serve as an alternative to hosting on apache
-4. go to localhost:8000
+3. composer dump-autoload
+4. php artisan optimize
+5. run php artisan serve as an alternative to hosting on apache
+6. go to localhost:8000
