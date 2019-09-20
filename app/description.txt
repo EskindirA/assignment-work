@@ -1,0 +1,21 @@
+Steps/Procedures followed the read the Maps API
+
+1. Set up a project in Google Cloud Platform Console
+2. Add required APIs (Maps and Places - added)
+3. Configure credential for the added API (API key is also generated here)
+4. Copy the key and place it in the configuration file (.env)
+5. Start reading and test with postman
+
+
+Geonames.org api end point - http://api.geonames.org/searchJSON?q=prague&username=eskindir&fcode=ppl
+further parameters are set to fetch the most relevant based on feature code - from the following
+https://www.geonames.org/export/codes.html
+by setting the fcode to PPLC (e.g to fetch only capital cities)
+
+Google maps embed api end point used
+https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyBy458TdFkra6QkOkgOzrs4NCi4_DkLA3E&input=Holešovice&inputtype=textquery
+
+is used to search for the place id based on the toponymName
+
+and then the returned place id is used to locate the show on the map
+
